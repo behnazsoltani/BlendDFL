@@ -6,11 +6,11 @@ Install the dependencies using:
 pip install -r requirements.txt
 ```
 
-Run the following command to start training BlendDFL with 50 clients on CIFAR-10 using a grid topology:
+Run the following command to start training BlendDFL with 50 clients on CIFAR-10 using a ring topology:
 
 ```bash
 python dfl.py --client_num_in_total 50 --comm_round 1000 --partition_method dir --partition_alpha 0.3 --algorithm blenddfl --model cnn_cifar10 --dataset cifar10 --apply_lr_decay 
-  --topology grid --lr 0.01 --round_number_evaluation 10 --temperature 3 --kd_weight 10 --gpu 1
+  --topology ring --lr 0.01 --round_number_evaluation 10 --temperature 3 --kd_weight 25 --gpu 1
 ```
 # Key Arguments:
 
