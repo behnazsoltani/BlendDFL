@@ -1,5 +1,11 @@
 # Beyond Parameters: Locally-Guided Knowledge Distillation for Decentralized Federated Learning
 
+Install the dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
 Run the following command to start training BlendDFL with 50 clients on CIFAR-10 using a grid topology:
 
 ```bash
